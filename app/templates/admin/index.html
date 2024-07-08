@@ -1,0 +1,16 @@
+{% extends 'admin_base.html' %}
+
+{% block title %}Admin Panel{% endblock %}
+
+{% block content %}
+<div class="container">
+    <h1>Welcome to Admin Panel</h1>
+    <p>Choose a section to manage:</p>
+    <ul>
+        <li><a href="{{ url_for('admin_portfolio') }}">Manage Portfolio</a></li>
+        <li><a href="{{ url_for('admin_about') }}">Manage About</a></li>
+        <li><a href="{{ url_for('admin_contact') }}">Manage Contact</a></li>
+        <li><a href="{{ url_for('admin_index') }}">Manage Index</a></li>
+    </ul>
+</div>
+{% endblock %}
